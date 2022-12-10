@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <title>Virtual Ceylon | home</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="contentNAV">
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Ratings</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="about">
+        <center>
+            <div class="rcicon">
+                <img src="RC_crest_white.png" alt="Royal college" class="rc">
+                <img src="CLUBLOGO.PNG" alt="History CLUB" class="hc">
+            </div>
+        <div class="projectlogo">
+            <img src="Plogo.png" alt="Project">
+        </div>
+          <div class="mainbox">
+            <div class="boxF">
+              <img src="indexPic.jpeg" alt="VirtualCeylon">
+            </div>
+            <div class="boxS">
+              <h1 class="title">Virtual Ceylon</h1>
+              <p class="fulldis">Virtual Ceylon presents ancient history in a modern video-game format, weaving a narrative that combines pulse-pounding action with enthralling tales of days past. <br>
+                It gives the player the opportunity to step into the shoes of a modern archaeologist who clashes with his artefact-robbing nemesis, both toppling into an arcane gateway to the past. <br>
+                As the archaeologist races desperately through time and space to escape his implacable enemy, it is you who must guide him to safety. <br>
+                Collect artefacts, craft tools, and explore the old world as you engage in the race of your lifetime. <br>
+                Available for free on Google Play Store.</p><br><br><br><br>
+                <a href="virtual ceylon 0.15.apk" download='image' class="download-btn">Download
+                  <i class="fa fa-download"></i>
+              </a><br><br><br>
+              <h3 class="dis">Get ready to run!</h3>
+              <pre>Run for your life through a time long past!</pre>
+            </div>
+          </div>
+          <br><br>
+        </center>
+    </div>
+    
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 1 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+</body>
+</html>
