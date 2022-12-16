@@ -77,7 +77,7 @@
 
             <div class="bottom-content">
                 <li class="">
-                    <a href="#">
+                    <a id="logout">
                         <i class='bx bx-log-out icon' ></i>
                         <span class="text nav-text">Logout</span>
                     </a>
@@ -104,6 +104,21 @@ toggle.addEventListener("click" , () =>{
 
 searchBtn.addEventListener("click" , () =>{
     sidebar.classList.remove("close");
+});
+      
+      logout.addEventListener('click',(e)=>{
+
+   signOut(auth).then(() => {
+     // Sign-out successful.
+     alert('user loged out');
+   }).catch((error) => {
+     // An error happened.
+     const errorCode = error.code;
+     const errorMessage = error.message;
+
+        alert(errorMessage);
+   });
+
 });
     </script>
 
