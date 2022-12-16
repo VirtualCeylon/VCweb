@@ -21,24 +21,17 @@
 .content{
   max-width: 1250px;
   margin: auto;
-  padding: 0 30px;
 }
 .navbar{
   position: fixed;
-  width: 98%;
-  height: 50px;
+  width: 100%;
   z-index: 2;
   padding: 25px 0;
   transition: all 0.3s ease;
-  margin-left: 1%;
-  margin-right: 1%;
 }
 .navbar.sticky{
   background: #1b1b1b;
-  filter: opacity(0.7);
   padding: 10px 0;
-  height: 50px;
-  align-items: center;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
 .navbar .content{
@@ -53,8 +46,6 @@
   text-decoration: none;
 }
 .navbar .menu-list{
-  width: 98vw;
-  justify-content: space-between;
   display: inline-flex;
 }
 .menu-list li{
@@ -69,13 +60,24 @@
   transition: all 0.3s ease;
 }
 .menu-list li a:hover{
-  color: #ffd710;
+  color: #fffb00;
+}
+
+
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
 }
 .icon{
   color: #fff;
   font-size: 20px;
   cursor: pointer;
   display: none;
+  margin-left: 30px;
 }
 .menu-list .cancel-btn{
   position: absolute;
@@ -95,65 +97,11 @@
 @media (max-width: 900px) {
   .content{
     padding: 0 30px;
-    width: 100%;
-  }
-}
-@media (max-width: 800px) {
-  .content{
-    padding: 0 30px;
-    width: 100%;
-  }
-}
-@media (max-width: 700px) {
-  .content{
-    padding: 0 30px;
-    width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  .content{
-    padding: 0 30px;
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .content{
-    padding: 0 30px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 400px) {
-  .content{
-    padding: 0 30px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 300px) {
-  .content{
-    padding: 0 30px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 200px) {
-  .content{
-    padding: 0 30px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 100px) {
-  .content{
-    padding: 0 30px;
-    width: 100%;
   }
 }
 @media (max-width: 868px) {
   body.disabled{
     overflow: hidden;
-    width: 100%;
   }
   .icon{
     display: block;

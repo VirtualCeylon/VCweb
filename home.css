@@ -42,6 +42,7 @@ body{
 }
 .boxF img{
     width: 100%;
+    height: 100%;
     filter: drop-shadow(80px 50px 100px rgb(0, 247, 255) );
 }
 .boxS{
@@ -106,8 +107,231 @@ body{
     letter-spacing: 2px;
     color: #ffd500cb;
 }
+.bugsbox{
+    display: flex;
+    border-radius: 7px;
+    background: #111111c0;
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.bugBoxF{
+    width: 45%;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+}
+.bugBoxF img{
+    width: 50%;
+    filter: drop-shadow(60px 20px 200px rgb(255, 0, 0) );
+}
+.bugBoxS{
+    z-index: 10;
+    width: 45%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-right: 2.5%;
+}
+.bugBoxS h1{
+    font-size: 200%;
+    font-family: consolas;
+    font-weight: 700;
+    color: #ffffff;
+}
+.bugBoxS form{
+    width: 80%;
+    margin-top: 2%;
+    background-color: #111111de;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.bugBoxS form input[type=text], input[type=email] ,textarea{
+    width: 90%;
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    border-top: 0;
+    border-bottom: 1px solid #333;
+    border-left: 0;
+    border-right: 0;
+    height: 30px;
+    margin-top: 10px;
+}
+.bugBoxS form textarea{
+    resize: none;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.bugBoxS form input[type=submit]{
+    width: 50%;
+    height: 50px;
+    color: #fff;
+    background: rgba(255, 55, 55, 0.863);
+    margin-bottom: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    font-weight: 500;
+    filter: drop-shadow(60px 20px 20px rgba(255, 0, 0, 0.137));
+}
+.bugBoxS form input[type=submit]:hover{
+    background-color: #00ff0dc0;
+    color: #111111de;
+    filter: drop-shadow(60px 20px 20px rgba(0, 255, 0, 0.137));
+}
+.newsU{
+    border-radius: 7px;
+    background: #111111c0;
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.newsU .news{
+    display: flex;
+    border-radius: 7px;
+    background: #111111;
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.Imagebox{
+    width: 45%;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+}
+.Imagebox img{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5%;
+    filter: drop-shadow(80px 50px 500px rgb(0, 247, 255) );
+}
+.newsbox{
+    z-index: 10;
+    width: 45%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-right: 2.5%;
+}
+.newsbox h1{
+    color: #e2c625;
+}
+.newsbox{
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    font-weight: 300;
+    color: aliceblue;
+}
+.newsbox ul{
+    margin-left: 10%;
+    text-align: left;
+}
+.img img{
+    filter: drop-shadow(-80px 50px 500px rgb(0, 247, 255) );
+}
+.img1 img{
+    filter: drop-shadow(-80px 50px 500px rgb(74, 78, 78) );
+}
+.img2 img{
+    filter: drop-shadow(-80px 50px 500px rgb(87, 9, 9) );
+}
+.img3 img{
+    filter: drop-shadow(-10px 10px 500px rgb(255, 208, 0) );
+}
+.newsMainTitle{
+    margin-top: 3%;
+    color: #fff;
+    z-index: 12;
+}
+.comments{
+    display: flex;
+    border-radius: 7px;
+    background: #111111c0;
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.comF{
+    width: 45%;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+}
+.comF img{
+    width: 50%;
+    filter: drop-shadow(60px 20px 200px rgba(90, 90, 90, 0.815) );
+}
+.comS{
+    z-index: 10;
+    width: 45%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-right: 2.5%;
+}
+.comS h1{
+    margin-top: 10%;
+    font-size: 200%;
+    font-family: consolas;
+    font-weight: 700;
+    color: #ffffff;
+}
+.comS form{
+    width: 80%;
+    margin-top: 2%;
+    background-color: #111111de;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.comS form input[type=text], input[type=email] ,textarea{
+    width: 90%;
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    border-top: 0;
+    border-bottom: 1px solid #333;
+    border-left: 0;
+    border-right: 0;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.comS form textarea{
+    resize: none;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.comS form input[type=submit]{
+    width: 50%;
+    height: 50px;
+    color: #fff;
+    background: rgba(27, 27, 27, 0.863);
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    font-weight: 500;
+    filter: drop-shadow(60px 20px 20px rgba(83, 83, 83, 0.137));
+}
+.comS form input[type=submit]:hover{
+    background-color: #424242c0;
+    color: #ffbd07de;
+    filter: drop-shadow(60px 20px 20px rgba(250, 225, 112, 0.137));
+}
+
+
+
+
 @media(max-width: 860px){
-    .mainbox{
+    .mainbox, .bugsbox, .newsU, .comS{
         display: block;
         width: 100vw;
         margin-left: 0;
@@ -120,10 +344,9 @@ body{
         margin-right: 0;
     }
     .boxF img{
-        width: 100%;
-        filter: drop-shadow(80px 50px 500px rgb(0, 247, 255) );
+        display: none;
     }
-    .boxS{
+    .boxS, .bugBoxS ,.newsbox, .comS{
         width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -133,6 +356,56 @@ body{
         font-size: 1.5rem;
     }
     .boxS pre{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
+    }
+    .bugBoxF{
+        display: none;
+    }
+    .Imagebox{
+        display: none;
+    }
+    .newsbox1{
+        background: linear-gradient(#000000cb, #000000c4), url(iOS.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        border-radius: 7px;
+        outline: none;
+        border: none;
+    }
+    .newsbox2{
+        background: linear-gradient(#000000cb, #000000c4), url(Craft0001.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        border-radius: 7px;
+        outline: none;
+        border: none;
+    }
+    .newsbox3{
+        background: linear-gradient(#000000cb, #000000c4), url(Anuradhapura.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        border-radius: 7px;
+        outline: none;
+        border: none;
+    }
+    .mainbox{
+        background: linear-gradient(#000000cb, #000000c4), url(indexPic.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .comF{
+        display: none;
+    }
+    .comS form input[type=submit]{
+        width: 80%;
     }
 }
