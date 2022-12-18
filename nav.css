@@ -62,16 +62,6 @@
 .menu-list li a:hover{
   color: #fffb00;
 }
-
-
-.about .title{
-  font-size: 38px;
-  font-weight: 700;
-}
-.about p{
-  padding-top: 20px;
-  text-align: justify;
-}
 .icon{
   color: #fff;
   font-size: 20px;
