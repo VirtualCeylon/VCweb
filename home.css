@@ -344,9 +344,8 @@ body{
         margin-left: 0;
         margin-right: 0;
     }
-    .boxS h1{
-        text-align: center;
-        font-size: 1.5rem;
+    .boxS img{
+        width: 80%;
     }
     .boxS pre{
         font-size: 0.6rem;
